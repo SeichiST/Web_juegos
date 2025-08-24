@@ -1,0 +1,82 @@
+.carro {
+    width: 30px;
+    height: 30px;
+    padding: 0px 20px;
+}
+.carritoNav {
+    display: none;
+    text-align: center
+}
+#Contenedor nav .compras:hover > .carritoBuy{
+    display: block;
+    width: 385px;
+    height: 500px;
+    position: absolute;
+    right: 10px;
+    background-color: rgb(133, 103, 244);
+    border: 5px rgba(0, 0, 0, 0.384) solid;
+    border-radius: 10px;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.212);
+    list-style: none;
+}
+#Contenedor nav .compras:hover .carritoNav {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 90px 85px 60px 80px 10px;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px auto 5px;
+    gap: 7px;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+.carritoBuy li {
+    list-style: none;
+    font-size: 19px;
+}
+.Compra:hover .carritoBuy {
+    display: block;
+}
+/*Contenido dentro del carrito*/
+.carritoBuy .Productos {
+    max-height: 440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Productos div{
+    display: none;
+    text-align: center;
+    padding: 5px 5px;
+    border-bottom: 2px solid rgba(135, 7, 194, 0.26);
+    margin: 0 5px 1px;
+}
+#Contenedor nav .compras:hover .carritoBuy > .Productos div {
+    display: grid;
+    grid-template-columns: 80px 95px 95px 50px 30px;
+    align-items: center;
+    padding: 5px 10px;
+}
+.Productos img {
+    width: 65px;
+}
+.Productos p {
+    font-size: 17px;
+    margin: 0 5px;
+    text-align: center;
+    padding: 5px 0;
+    overflow-wrap: break-word;
+}
+.Productos p:last-child span {
+    font-size: 20px;
+}
+.Borrar {
+    font-weight: bold;
+}
+.Productos .totalCarrito {
+    margin: 0 50px;
+}
+.Productos .totalCarrito button {
+    background-color: blueviolet;
+    border: rgba(128, 0, 128, 0.233) solid 2px;
+    border-radius: 10px;
+}
